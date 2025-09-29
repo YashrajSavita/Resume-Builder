@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup - Resume Builder</title>
+  <link rel="stylesheet" href="/CSS/login.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Resume Builder Login</h2>
+
+    <!-- Signup Form -->
+    <div class="form-box">
+      <h3>Signup</h3>
+      <input type="email" id="signup-email" placeholder="Enter Email">
+      <input type="password" id="signup-password" placeholder="Enter Password">
+      <button onclick="signup()">Signup</button>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-box">
+      <h3>Login</h3>
+      <input type="email" id="login-email" placeholder="Enter Email">
+      <input type="password" id="login-password" placeholder="Enter Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+
+  <!-- Our Script -->
+  <script src="/JAVASCRIPT/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* Classic Template (Default) */
+.resume-container.default {
+  font-family: Arial, sans-serif;
+  border-left: 5px solid #007bff;
+}
+
+/* Modern Template */
+.resume-container.modern {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #f9f9f9;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* Elegant Template */
+.resume-container.elegant {
+  font-family: 'Times New Roman', serif;
+  background: #fffaf0;
+  border: 1px solid #aaa;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Template Selector Styling */
+.template-selector {
+  text-align: center;
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.template-selector select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Form - Resume Builder</title>
+
+  <link rel="stylesheet" href="/CSS/resume form.css">
+
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Fill Your Resume Details</h2>
+
+    <!-- Personal Info -->
+    <div class="form-box">
+      <h3>Personal Information</h3>
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <input type="text" id="address" placeholder="Address">
+    </div>
+
+    <!-- Education -->
+    <div class="form-box">
+      <h3>Education</h3>
+      <input type="text" id="degree" placeholder="Degree">
+      <input type="text" id="college" placeholder="College/University">
+      <input type="text" id="year" placeholder="Year of Graduation">
+    </div>
+
+    <!-- Skills -->
+    <div class="form-box">
+      <h3>Skills</h3>
+      <textarea id="skills" placeholder="List your skills separated by commas"></textarea>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="form-box">
+      <h3>Work Experience</h3>
+      <input type="text" id="company" placeholder="Company Name">
+      <input type="text" id="role" placeholder="Role/Position">
+      <input type="text" id="duration" placeholder="Duration (e.g. 2021-2023)">
+      <textarea id="description" placeholder="Job Description"></textarea>
+    </div>
+
+    <!-- Save Button -->
+    <button onclick="saveResume()">Save & Preview</button>
+
+    <p id="message"></p>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+
+  <!-- Our Script -->
+  <script src="/JAVASCRIPT/resume form.js"></script>
+  
+</body>
+</html>
